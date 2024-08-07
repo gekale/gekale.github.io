@@ -44,6 +44,7 @@ header {
     padding: 0;
     cursor: pointer;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    outline: none;
 }
 
 #cat-sound-button img {
@@ -51,6 +52,10 @@ header {
     height: 128px;
     border: 5px solid #333;
     border-radius: 10px;
+}
+
+#cat-sound-button:focus {
+    outline: none;
 }
 
 footer {
