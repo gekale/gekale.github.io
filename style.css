@@ -35,6 +35,30 @@ header {
     transform: scale(1.1);
 }
 
+#cat-sound-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    outline: none;
+    opacity: 0;  /* Makes the button itself invisible */
+}
+
+#cat-sound-button img {
+    width: 128px;
+    height: 128px;
+    border: 5px solid #333;
+    border-radius: 10px;
+}
+
+#cat-sound-button:focus {
+    outline: none;
+}
+
 footer {
     background-color: #333;
     color: white;
