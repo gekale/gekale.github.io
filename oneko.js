@@ -60,7 +60,7 @@
         nekoEl.style.width = "32px";
         nekoEl.style.height = "32px";
         nekoEl.style.position = "fixed";
-        nekoEl.style.backgroundImage = "url('./scripts/oneko/oneko.gif')";
+        nekoEl.style.backgroundImage = "url('https://files.catbox.moe/cjsfx8.gif')";
         nekoEl.style.imageRendering = "pixelated";
         nekoEl.style.left = "16px";
         nekoEl.style.top = "16px";
