@@ -59,24 +59,34 @@
         .nav-buttons button:hover {
             background-color: #777;
         }
-        
+
+        /* Container for all buttons */
+        .image-button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px auto;
+            width: 90%;
+        }
+
+        /* Style for all image buttons */
         .image-button {
-            display: block;
             width: 248px;
             height: 248px;
-            margin: 20px auto;
-            background: url('https://files.catbox.moe/chn51a.png') no-repeat center center;
             background-size: cover;
-            border: none;
+            border: 2px solid transparent;
             cursor: pointer;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
         }
 
         .image-button:hover {
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            border: 2px solid #555;
+            transform: scale(1.05);
         }
-
     </style>
 </head>
 <body>
@@ -87,8 +97,10 @@
             <button id="arts-button" onclick="location.href='index.html'">my arts</button>
         </div>
     </header>
-    <div>
-        <button class="image-button" onclick="window.location.href='https://gekfur.itch.io/meow';"></button>
+
+    <div class="image-button-container">
+        <button class="image-button" style="background-image: url('https://files.catbox.moe/chn51a.png');" 
+                onclick="window.location.href='https://gekfur.itch.io/meow';"></button>
     </div>
     <footer>
         hosted thanks to byte <3
