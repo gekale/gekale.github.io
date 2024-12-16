@@ -109,7 +109,7 @@ footer {
     cursor: pointer;
     text-align: center;
     transition: none; /* No hover effect */
-    margin: 0 auto; /* Center horizontally */
+    margin: 20px auto; /* Center horizontally */
     display: block; /* Make it a block-level element to enable centering */
     width: 200px; /* Set a fixed width */
     height: 60px; /* Set a fixed height */
