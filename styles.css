@@ -11,11 +11,11 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 40px; /* Increased padding for larger header */
+    padding: 15px; /* Smaller padding */
     font-family: 'Courier New', Courier, monospace;
-    font-size: 2em; /* Larger text size */
+    font-size: 1.2em; /* Smaller font size */
     position: relative;
-    text-align: center; /* Centered text */
+    text-align: center;
 }
 
 .nav-buttons {
@@ -29,11 +29,11 @@ header {
     background-color: #555;
     color: white;
     border: none;
-    padding: 15px 25px; /* Larger padding for bigger buttons */
-    margin: 0 5px;
-    border-radius: 5px;
+    padding: 5px 12px; /* Smaller padding */
+    margin: 0 3px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 1.2em; /* Bigger text size for buttons */
+    font-size: 0.9em; /* Smaller text */
 }
 
 .nav-buttons button:hover {
@@ -42,8 +42,8 @@ header {
 
 .gallery-container {
     width: 100%;
-    max-width: 400px; /* Consistent container size */
-    height: 400px; /* Fixed height */
+    max-width: 400px;
+    height: 400px;
     margin: 20px auto;
     overflow: hidden;
     position: relative;
@@ -59,7 +59,7 @@ header {
 .slide {
     min-width: 100%;
     height: 100%;
-    object-fit: contain; /* Ensures images scale while maintaining aspect ratio */
+    object-fit: contain;
 }
 
 .prev, .next {
@@ -69,10 +69,10 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 5px; /* Smaller buttons */
     cursor: pointer;
     border-radius: 50%;
-    font-size: 1.5em;
+    font-size: 1em; /* Smaller arrow size */
     z-index: 10;
 }
 
