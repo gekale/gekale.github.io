@@ -62,18 +62,12 @@ header {
     object-fit: contain;
 }
 
-.slide-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the image and caption */
-    text-align: center;
-}
-
-.caption {
-    margin-top: 8px; /* Space between image and caption */
-    font-size: 0.9em;
-    color: #555;
+.caption-container {
+    margin-top: 10px; /* Space between gallery and caption */
+    font-size: 1em;
     font-family: 'Courier New', Courier, monospace;
+    color: #555;
+    text-align: center;
 }
 
 .prev, .next {
