@@ -103,14 +103,18 @@ footer {
     color: white; /* White text */
     padding: 15px 30px; /* Larger padding */
     font-size: 1.2em; /* Larger font size */
+    font-family: 'Courier New', Courier, monospace; /* Same font as header */
     border: 2px solid black; /* Black border */
     border-radius: 8px; /* Rounded corners */
     cursor: pointer;
     text-align: center;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+    transition: none; /* No hover effect */
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Make it a block-level element to enable centering */
+    width: 200px; /* Set a fixed width */
+    height: 60px; /* Set a fixed height */
 }
 
 .meow-button:hover {
-    background-color: #ff66b2; /* Darker pink on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    background-color: pink; /* Keep it the same on hover */
 }
