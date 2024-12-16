@@ -62,6 +62,20 @@ header {
     object-fit: contain;
 }
 
+.slide-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the image and caption */
+    text-align: center;
+}
+
+.caption {
+    margin-top: 8px; /* Space between image and caption */
+    font-size: 0.9em;
+    color: #555;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .prev, .next {
     position: absolute;
     top: 50%;
