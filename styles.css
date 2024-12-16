@@ -11,7 +11,7 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 40px; /* Increased padding for larger header */
+    padding: 25px; /* Increased padding for larger header */
     font-family: 'Courier New', Courier, monospace;
     font-size: 2em; /* Larger text size */
     position: relative;
