@@ -7,9 +7,9 @@ function changeSlide(direction) {
     currentIndex += direction;
 
     if (currentIndex < 0) {
-        currentIndex = totalSlides - 1;
+        currentIndex = totalSlides - 1; // Go to the last slide
     } else if (currentIndex >= totalSlides) {
-        currentIndex = 0;
+        currentIndex = 0; // Go back to the first slide
     }
 
     slides.style.transform = `translateX(-${currentIndex * 100}%)`;
