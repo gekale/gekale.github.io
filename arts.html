@@ -1,28 +1,17 @@
 <main>
     <div class="gallery-container">
-        <div class="slider">
-            <div class="slide-container">
-                <img class="slide" src="https://files.catbox.moe/d1q0lm.png" alt="purple cat">
-                <p class="caption">Purple Cat</p>
-            </div>
-            <div class="slide-container">
-                <img class="slide" src="https://files.catbox.moe/4pf5ag.png" alt="gekale">
-                <p class="caption">Gekale</p>
-            </div>
-            <div class="slide-container">
-                <img class="slide" src="https://files.catbox.moe/cse3yo.png" alt="cat on duty">
-                <p class="caption">Cat on Duty</p>
-            </div>
-            <div class="slide-container">
-                <img class="slide" src="https://files.catbox.moe/fa1n5y.png" alt="goober cat">
-                <p class="caption">Goober Cat</p>
-            </div>
-            <div class="slide-container">
-                <img class="slide" src="https://files.catbox.moe/ryjg9b.png" alt="monopoly! cat">
-                <p class="caption">Monopoly! Cat</p>
-            </div>
-        </div>
         <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="slider">
+            <img class="slide" src="https://files.catbox.moe/d1q0lm.png" alt="Purple Cat">
+            <img class="slide" src="https://files.catbox.moe/4pf5ag.png" alt="Gekale">
+            <img class="slide" src="https://files.catbox.moe/cse3yo.png" alt="Cat on Duty">
+            <img class="slide" src="https://files.catbox.moe/fa1n5y.png" alt="Goober Cat">
+            <img class="slide" src="https://files.catbox.moe/ryjg9b.png" alt="Monopoly! Cat">
+        </div>
         <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    <!-- Caption placeholder -->
+    <div class="caption-container">
+        <p id="caption">Purple Cat</p>
     </div>
 </main>
