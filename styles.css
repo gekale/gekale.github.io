@@ -41,9 +41,9 @@ header {
 }
 
 .gallery-container {
-    width: 200%;
-    max-width: 200px;
-    height: 200px;
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
     margin: 20px auto;
     overflow: hidden;
     position: relative;
