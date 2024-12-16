@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Arts</title>
+    <title>My Projects</title>
     <link href="favicon.ico" rel="icon" />
     <link rel="stylesheet" href="styles.css">
     <script src="oneko.js" defer></script>
     <script src="birthday.js" defer></script>
+    <style>
+        .large-button {
+            width: 200px; /* Adjust width */
+            height: 200px; /* Adjust height */
+            background-size: cover; /* Ensure the image fills the button */
+            border: none; /* Remove default button border */
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header id="header">
@@ -19,8 +28,11 @@
     </header>
 
     <div class="image-button-container">
-        <button class="image-button" style="background-image: url('https://files.catbox.moe/chn51a.png');" 
-                onclick="window.location.href='https://gekfur.itch.io/meow';"></button>
+        <button 
+            class="large-button" 
+            style="background-image: url('https://files.catbox.moe/chn51a.png');" 
+            onclick="window.location.href='https://gekfur.itch.io/meow';">
+        </button>
     </div>
     <footer>
         Hosted thanks to Byte!
