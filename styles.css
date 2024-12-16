@@ -96,3 +96,22 @@ footer {
     position: fixed;
     bottom: 0;
 }
+
+.image-button {
+    display: block; /* Ensures it behaves like a block element */
+    width: 256px; /* Desired button width */
+    height: 256px; /* Desired button height */
+    background-size: contain; /* Image will fit inside the button */
+    background-repeat: no-repeat; /* Prevents image tiling */
+    background-position: center; /* Centers the image */
+    border: none; /* Removes button border */
+    border-radius: 8px; /* Optional: rounded corners */
+    margin: 20px auto; /* Centers the button horizontally with some margin */
+    cursor: pointer; /* Makes the cursor a pointer */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-button:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
