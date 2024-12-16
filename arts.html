@@ -1,38 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Arts</title>
-    <link href="favicon.ico" rel="icon" />
-    <link rel="stylesheet" href="styles.css">
-    <script src="slider.js" defer></script>
-</head>
-<body>
-    <header id="header">
-        My Arts
-        <div class="nav-buttons">
-            <button id="projects-button" onclick="location.href='projects.html'">My Projects</button>
-            <button id="arts-button" onclick="location.href='index.html'">About Me</button>
-        </div>
-    </header>
-
-    <main>
-        <div class="gallery-container">
-            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-            <div class="slider">
+<main>
+    <div class="gallery-container">
+        <div class="slider">
+            <div class="slide-container">
                 <img class="slide" src="https://files.catbox.moe/d1q0lm.png" alt="purple cat">
-                <img class="slide" src="https://files.catbox.moe/4pf5ag.png" alt="gekale">
-                <img class="slide" src="https://files.catbox.moe/cse3yo.png" alt="cat on duty">
-                <img class="slide" src="https://files.catbox.moe/fa1n5y.png" alt="goober cat">
-                <img class="slide" src="https://files.catbox.moe/ryjg9b.png" alt="monopoly! cat">
+                <p class="caption">Purple Cat</p>
             </div>
-            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <div class="slide-container">
+                <img class="slide" src="https://files.catbox.moe/4pf5ag.png" alt="gekale">
+                <p class="caption">Gekale</p>
+            </div>
+            <div class="slide-container">
+                <img class="slide" src="https://files.catbox.moe/cse3yo.png" alt="cat on duty">
+                <p class="caption">Cat on Duty</p>
+            </div>
+            <div class="slide-container">
+                <img class="slide" src="https://files.catbox.moe/fa1n5y.png" alt="goober cat">
+                <p class="caption">Goober Cat</p>
+            </div>
+            <div class="slide-container">
+                <img class="slide" src="https://files.catbox.moe/ryjg9b.png" alt="monopoly! cat">
+                <p class="caption">Monopoly! Cat</p>
+            </div>
         </div>
-    </main>
-
-    <footer>
-        Hosted thanks to Byte!
-    </footer>
-</body>
-</html>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+</main>
