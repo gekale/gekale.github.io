@@ -97,7 +97,7 @@ footer {
     bottom: 0;
 }
 
-/* New Meow Button Style */
+/* Meow Button Style */
 .meow-button {
     background-color: pink; /* Pink background */
     color: white; /* White text */
@@ -108,13 +108,15 @@ footer {
     border-radius: 8px; /* Rounded corners */
     cursor: pointer;
     text-align: center;
-    transition: none; /* No hover effect */
     margin: 20px auto; /* Center horizontally */
     display: block; /* Make it a block-level element to enable centering */
     width: 200px; /* Set a fixed width */
     height: 60px; /* Set a fixed height */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add smooth hover transitions */
 }
 
 .meow-button:hover {
-    background-color: pink; /* Keep the same pink on hover */
+    transform: scale(1.1); /* Slightly enlarge the button */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Add a stronger shadow */
 }
