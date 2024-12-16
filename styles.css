@@ -29,7 +29,7 @@ header {
     background-color: #555;
     color: white;
     border: none;
-    padding: 10px 20px; /* Larger padding for bigger buttons */
+    padding: 5px 20px; /* Larger padding for bigger buttons */
     margin: 0 5px;
     border-radius: 5px;
     cursor: pointer;
