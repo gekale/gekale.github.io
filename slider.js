@@ -13,5 +13,5 @@ function changeSlide(direction) {
         currentIndex = 0; // Wrap to first slide
     }
 
-    slider.style.transform = translateX(-${currentIndex * 100}%);
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
