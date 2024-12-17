@@ -73,7 +73,7 @@ h2 {
 }
 
 .art-item img {
-    width: 100%;
+    width: 250%;
     height: 250px;
     object-fit: cover;
     border-radius: 5px;
