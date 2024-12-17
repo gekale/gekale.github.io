@@ -8,7 +8,6 @@ body {
     text-align: center;
 }
 
-/* Header */
 header {
     background-color: #333;
     color: white;
@@ -46,12 +45,6 @@ main {
     padding: 20px;
 }
 
-h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-}
-
-/* Gallery Grid */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 250px); /* Exactly 3 images per row */
@@ -82,7 +75,33 @@ h2 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Footer */
+.image-button-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin: 20px 0;
+}
+
+.image-button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.image-button-img {
+    width: 250px; /* Set fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.image-button:hover .image-button-img {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
 footer {
     background-color: #333;
     color: white;
