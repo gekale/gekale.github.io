@@ -45,40 +45,39 @@ main {
     padding: 20px;
 }
 
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 250px); /* Exactly 3 images per row */
+    grid-template-columns: repeat(3, 250px); /* 3 items per row */
     gap: 15px;
-    justify-content: center; /* Center the grid */
+    justify-content: center;
     margin: 0 auto;
 }
 
 .art-item {
-    background-color: #fff; /* White box for the images */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    border: 2px solid #ccc; /* Light border */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ccc;
     border-radius: 8px;
-    padding: 10px; /* Add padding inside the box */
+    padding: 10px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.art-item img {
-    width: 100%; /* Maintain 250px width */
-    height: 250px; /* Fixed height */
-    object-fit: cover; /* Keep proportions while covering box */
-    border-radius: 5px;
-    display: block;
-}
-
 .art-item:hover {
-    transform: scale(1.05); /* Slight zoom */
+    transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.image-button-container {
-    display: flex;
-    justify-content: center; /* Center the button horizontally */
-    margin: 20px 0;
+.art-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
 }
 
 .image-button {
@@ -86,20 +85,20 @@ main {
     background: none;
     padding: 0;
     cursor: pointer;
-    transition: transform 0.2s ease;
+    width: 100%;
 }
 
 .image-button-img {
-    width: 250px; /* Set fixed width for the image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+    transition: transform 0.2s ease;
 }
 
 .image-button:hover .image-button-img {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
 }
 
 footer {
