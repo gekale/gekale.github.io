@@ -3,34 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Arts</title>
+    <title>Henlo!</title>
     <link href="favicon.ico" rel="icon" />
     <link rel="stylesheet" href="styles.css">
-    <script src="slider.js" defer></script>
+    <script src="oneko.js" defer></script>
+    <script src="birthday.js" defer></script>
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Henlo! I'm Gekara" />
+    <meta property="og:description" content="I'm Gekara, a trans pixel artist, epic gamer, and cat lover. Learn more about me here!" />
+    <meta property="og:image" content="https://yourwebsite.com/preview-image.png" />
+    <meta property="og:url" content="https://yourwebsite.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Optional Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Henlo! I'm Gekara" />
+    <meta name="twitter:description" content="I'm Gekara, a trans pixel artist, epic gamer, and cat lover. Learn more about me here!" />
+    <meta name="twitter:image" content="https://yourwebsite.com/preview-image.png" />
 </head>
 <body>
     <header id="header">
-        My Arts
+        About Me
         <div class="nav-buttons">
             <button id="projects-button" onclick="location.href='projects.html'">My Projects</button>
-            <button id="arts-button" onclick="location.href='index.html'">About Me</button>
+            <button id="arts-button" onclick="location.href='arts.html'">My Arts</button>
         </div>
     </header>
-
     <main>
-        <div class="gallery-container">
-            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-            <div class="slider">
-                <img class="slide" src="https://files.catbox.moe/d1q0lm.png" alt="purple cat">
-                <img class="slide" src="https://files.catbox.moe/4pf5ag.png" alt="gekale">
-                <img class="slide" src="https://files.catbox.moe/cse3yo.png" alt="cat on duty">
-                <img class="slide" src="https://files.catbox.moe/fa1n5y.png" alt="goober cat">
-                <img class="slide" src="https://files.catbox.moe/ryjg9b.png" alt="monopoly! cat">
-            </div>
-            <button class="next" onclick="changeSlide(1)">&#10095;</button>
-        </div>
+        <section class="introduction">
+            <h1>Henlo, my name is Gekara.</h1>
+            <p>
+                I'm born on August 2, 2005.
+                I am a trans pixel artist who likes cats (who doesn't?).<br>
+                I'm also an epic gamer (obviously!).<br>
+                <br>
+                You can contact me on discord. My account is ".gekara".<br>
+                Lorem ipsum dolor sit amet.
+            </p>
+        </section>
     </main>
-
     <footer>
         Hosted thanks to Byte!
     </footer>
