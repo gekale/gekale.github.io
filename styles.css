@@ -6,25 +6,28 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     text-align: center;
-    display: flex; /* Flexbox for vertical alignment */
+    display: flex;
     flex-direction: column;
     min-height: 100vh; /* Full viewport height */
 }
 
+/* Header */
 header {
     background-color: #333;
     color: white;
-    padding: 15px;
+    padding: 15px 20px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2em;
-    text-align: center;
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Title on left, buttons on right */
+    align-items: center; /* Vertical center alignment */
+    text-align: left;
 }
 
+/* Navigation Buttons */
 .nav-buttons {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    display: flex;
+    gap: 10px; /* Space between buttons */
 }
 
 .nav-buttons button {
@@ -32,7 +35,6 @@ header {
     color: white;
     border: none;
     padding: 5px 12px;
-    margin: 0 3px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 0.9em;
@@ -44,10 +46,11 @@ header {
 
 /* Main Section */
 main {
-    flex: 1;
-    padding: 20px 0;
+    flex: 1; /* Push footer to the bottom */
+    padding: 20px 0; /* Space above and below gallery */
 }
 
+/* Gallery Grid */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 250px); /* 3 items per row */
@@ -100,6 +103,7 @@ main {
     transform: scale(1.05);
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: white;
