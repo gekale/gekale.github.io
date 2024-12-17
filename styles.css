@@ -6,16 +6,17 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     text-align: center;
+    display: flex; /* Flexbox for vertical alignment */
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
 }
 
-/* Header */
 header {
     background-color: #333;
     color: white;
     padding: 15px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2em;
-    position: relative;
     text-align: center;
 }
 
@@ -43,15 +44,10 @@ header {
 
 /* Main Section */
 main {
-    padding: 20px;
+    flex: 1;
+    padding: 20px 0;
 }
 
-h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-}
-
-/* Gallery Grid */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 250px); /* 3 items per row */
@@ -75,14 +71,14 @@ h2 {
 }
 
 .art-item img {
-    width: 100%; /* Ensures the image takes full width */
-    height: 100%; /* Make sure the image fills the box without being zoomed */
-    object-fit: contain; /* Maintains aspect ratio without zooming in */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     border-radius: 5px;
     display: block;
 }
 
-/* Image Button Specific Styling */
+/* Image Button Styling */
 .image-button {
     border: none;
     background: none;
@@ -92,25 +88,22 @@ h2 {
 }
 
 .image-button-img {
-    width: 100%; /* Matches grid item width */
-    height: auto; /* Maintain the aspect ratio */
-    object-fit: contain; /* Prevents zooming and maintains aspect ratio */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
     border-radius: 5px;
     display: block;
     transition: transform 0.2s ease;
 }
 
 .image-button:hover .image-button-img {
-    transform: scale(1.05); /* No zoom effect on hover */
+    transform: scale(1.05);
 }
 
-/* Footer */
 footer {
     background-color: #333;
     color: white;
     padding: 10px;
     width: 100%;
-    position: fixed;
-    bottom: 0;
     text-align: center;
 }
