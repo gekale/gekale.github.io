@@ -6,31 +6,40 @@
     <title>My Arts</title>
     <link href="favicon.ico" rel="icon" />
     <link rel="stylesheet" href="styles.css">
-    <script src="slider.js" defer></script>
 </head>
 <body>
-    <header id="header">
+    <!-- Header -->
+    <header>
         My Arts
         <div class="nav-buttons">
-            <button id="projects-button" onclick="location.href='projects.html'">My Projects</button>
-            <button id="arts-button" onclick="location.href='index.html'">About Me</button>
+            <button onclick="location.href='projects.html'">My Projects</button>
+            <button onclick="location.href='index.html'">About Me</button>
         </div>
     </header>
 
+    <!-- Main Content -->
     <main>
-        <div class="gallery-container">
-            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-            <div class="slider">
-                <img class="slide" src="https://files.catbox.moe/d1q0lm.png" alt="purple cat">
-                <img class="slide" src="https://files.catbox.moe/4pf5ag.png" alt="gekale">
-                <img class="slide" src="https://files.catbox.moe/cse3yo.png" alt="cat on duty">
-                <img class="slide" src="https://files.catbox.moe/fa1n5y.png" alt="goober cat">
-                <img class="slide" src="https://files.catbox.moe/ryjg9b.png" alt="monopoly! cat">
+        <h2>Welcome to My Art Gallery</h2>
+        <div class="gallery-grid">
+            <div class="art-item">
+                <img src="https://files.catbox.moe/d1q0lm.png" alt="Purple Cat">
             </div>
-            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <div class="art-item">
+                <img src="https://files.catbox.moe/4pf5ag.png" alt="Gekale">
+            </div>
+            <div class="art-item">
+                <img src="https://files.catbox.moe/cse3yo.png" alt="Cat on Duty">
+            </div>
+            <div class="art-item">
+                <img src="https://files.catbox.moe/fa1n5y.png" alt="Goober Cat">
+            </div>
+            <div class="art-item">
+                <img src="https://files.catbox.moe/ryjg9b.png" alt="Monopoly! Cat">
+            </div>
         </div>
     </main>
 
+    <!-- Footer -->
     <footer>
         Hosted thanks to Byte!
     </footer>
