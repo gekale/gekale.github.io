@@ -8,6 +8,7 @@ body {
     text-align: center;
 }
 
+/* Header */
 header {
     background-color: #333;
     color: white;
@@ -50,6 +51,7 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Gallery Grid */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 250px); /* 3 items per row */
@@ -73,13 +75,14 @@ h2 {
 }
 
 .art-item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+    width: 100%; /* Ensures the image takes full width */
+    height: 100%; /* Make sure the image fills the box without being zoomed */
+    object-fit: contain; /* Maintains aspect ratio without zooming in */
     border-radius: 5px;
     display: block;
 }
 
+/* Image Button Specific Styling */
 .image-button {
     border: none;
     background: none;
@@ -89,18 +92,19 @@ h2 {
 }
 
 .image-button-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%; /* Matches grid item width */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Prevents zooming and maintains aspect ratio */
     border-radius: 5px;
     display: block;
     transition: transform 0.2s ease;
 }
 
 .image-button:hover .image-button-img {
-    transform: scale(1.05);
+    transform: scale(1.05); /* No zoom effect on hover */
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: white;
