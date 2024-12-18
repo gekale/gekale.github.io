@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 header {
@@ -21,6 +22,8 @@ header {
     justify-content: space-between;
     align-items: center;
     text-align: left;
+    box-sizing: border-box;
+    width: 100%; /* Ensure header spans the viewport */
 }
 
 /* Navigation Buttons */
@@ -47,6 +50,9 @@ header {
 main {
     flex: 1;
     padding: 20px 0;
+    box-sizing: border-box;
+    width: 100%; /* Ensure content stays within viewport */
+    overflow-x: hidden;
 }
 
 .gallery-grid {
@@ -55,6 +61,7 @@ main {
     gap: 15px;
     justify-content: center;
     margin: 0 auto;
+    max-width: 100%; /* Prevent grid overflow */
 }
 
 .art-item {
@@ -106,4 +113,5 @@ footer {
     padding: 10px;
     width: 100%;
     text-align: center;
+    box-sizing: border-box;
 }
