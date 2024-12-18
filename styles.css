@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
 }
 
 header {
@@ -23,7 +23,7 @@ header {
     align-items: center;
     text-align: left;
     box-sizing: border-box;
-    width: 100%; /* Ensure header spans the viewport */
+    width: 100%;
 }
 
 /* Navigation Buttons */
@@ -51,7 +51,7 @@ main {
     flex: 1;
     padding: 20px 0;
     box-sizing: border-box;
-    width: 100%; /* Ensure content stays within viewport */
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -61,7 +61,7 @@ main {
     gap: 15px;
     justify-content: center;
     margin: 0 auto;
-    max-width: 100%; /* Prevent grid overflow */
+    max-width: 100%;
 }
 
 .art-item {
