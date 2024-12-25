@@ -1,9 +1,14 @@
+@font-face {
+    font-family: 'SleepyFont';
+    src: url('font.otf') format('opentype');
+}
+
 /* General Reset */
 body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-family: 'SleepyFont', Arial, sans-serif; /* Use the custom font */
     color: #333;
     text-align: center;
     display: flex;
@@ -16,7 +21,7 @@ header {
     background-color: #333;
     color: white;
     padding: 15px 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'SleepyFont', 'Courier New', Courier, monospace; /* Use the custom font */
     font-size: 1.2em;
     display: flex;
     justify-content: space-between;
